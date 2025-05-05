@@ -1,2 +1,2 @@
 # MyWebsite
-My website portfolio containing my resume, work experience, projects, and contact info.
+A website portfolio with all of my experience, projects, resume, and contact information
