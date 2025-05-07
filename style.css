@@ -650,11 +650,12 @@ main {
 
   .hero-text {
     order: 2;
+    /*Mobile Addition*/ max-width: 100%;
   }
 
   .hero-image img {
     width: 180px;
-    margin-top: 1.5rem;
+    margin: 1.5rem 0;
   }
 
   .about-content,
@@ -666,6 +667,16 @@ main {
   .experience-container {
     flex-direction: column;
   }
+
+  .experience-item {
+    text-align: left;
+  }
+
+  .experience-bullets {
+    padding-left: 1.25rem;
+  }
+  
+  
 
   .experience-list {
     width: 100%;
@@ -690,6 +701,12 @@ main {
     font-size: 1.5rem;
   }
 
+  .text {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+
   .section-fade-in,
   .fade-in {
     animation-duration: 0.8s;
@@ -701,4 +718,3 @@ main {
     text-align: center;
   }
 }
-
