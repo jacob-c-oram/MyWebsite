@@ -1,3 +1,4 @@
+/*Home Page*/
 * {
   margin: 0;
   padding: 0;
@@ -241,3 +242,383 @@ body {
 }
 
 
+ /*Resume Section */
+
+.resume-section {
+  padding: 8rem 2rem 4rem 2rem;
+  text-align: center;
+}
+
+.resume-section h2 {
+  font-size: 2.5rem;
+  color: #00bfff;
+  margin-bottom: 2rem;
+}
+
+.resume-embed {
+  max-width: 900px;
+  height: 100vh;
+  margin: 0 auto 2rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.05);
+}
+
+.resume-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #00bfff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0099cc;
+}
+
+
+/*Resume*/
+.section-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: sectionFadeInUp 1s ease forwards;
+}
+
+@keyframes sectionFadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/*Contact Section*/
+.contact-section {
+  padding: 8rem 2rem 4rem 2rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #00bfff;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 2;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-info a.inline-link {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.contact-info a.inline-link:hover {
+  color: #0099cc;
+}
+
+.section-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: sectionFadeInUp 1s ease forwards;
+}
+
+@keyframes sectionFadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.contact-section {
+  padding: 8rem 2rem 4rem 2rem;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #00bfff;
+  margin-bottom: 2rem;
+}
+
+.contact-intro {
+  font-size: 1.1rem;
+  color: #ccc;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  font-style: normal;
+  padding-top: 1rem;
+}
+
+.contact-info {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 2;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+
+
+.inline-link {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.inline-link:hover {
+  color: #0099cc;
+}
+
+.section-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: sectionFadeInUp 1s ease forwards;
+}
+
+@keyframes sectionFadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/*Experience Section*/
+
+.experience-section {
+  padding: 8rem 4rem;
+  text-align: center;
+}
+
+.experience-section h2 {
+  font-size: 3rem;
+  color: #00bfff;
+  margin-bottom: 3rem;
+}
+
+.experience-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.experience-list {
+  list-style: none;
+  padding: 0;
+  width: 35%;
+  text-align: left;
+}
+
+.experience-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #1b1b1b;
+  color: #ccc;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-left: 5px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: buttonFadeIn 0.6s ease forwards;
+}
+
+.experience-list li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.experience-list li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.experience-list li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.experience-list li:hover,
+.experience-list li.active {
+  background-color: #222;
+  border-left: 5px solid #00bfff;
+  color: #fff;
+  transform: scale(1.02);
+  box-shadow: 0 0 8px rgba(0, 191, 255, 0.15);
+}
+
+@keyframes buttonFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.company-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 2px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.tab-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.company-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.job-title {
+  font-size: 0.95rem;
+  color: #888;
+  margin-top: 4px;
+}
+
+.experience-content {
+  width: 65%;
+  background-color: #161616;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 191, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.experience-item {
+  display: none;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.experience-item.active {
+  display: block;
+}
+
+.experience-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.experience-item p {
+  color: #ddd;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.experience-item h3.experience-role {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #00bfff;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.experience-item p.experience-dates {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.experience-item p.experience-company {
+  font-size: 1.2rem;
+  color: #bbb;
+  font-weight: 600;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+
+.experience-bullets {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #ddd;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.experience-bullets li {
+  margin-bottom: 0.75rem;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*Projects Section*/
+.github-link {
+  margin-top: -1rem;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.github-link a {
+  color: #00bfff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.github-link a:hover {
+  color: #0099cc;
+}
