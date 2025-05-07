@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Jacob Oram</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body>
+  <div id="wrapper">
+    <header class="navbar">
+      <h1 class="logo">Jacob Oram</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="experience-section">
+      <h2 class="section-fade-in">Projects</h2>
+
+      <div class="experience-container section-fade-in" style="animation-delay: 0s;">
+        <ul class="experience-list">
+          <li class="active" onclick="showExperience(0)">
+            <div class="tab-text">
+              <div class="company-name">Bit</div>
+              <div class="job-title">Miniature AI Assistant (in progress)</div>
+            </div>
+          </li>
+          <li onclick="showExperience(1)">
+            <div class="tab-text">
+              <div class="company-name">PlanIt</div>
+              <div class="job-title">AI Schedule + Task Optimizer (in progress)</div>
+            </div>
+          </li>
+          <li onclick="showExperience(2)">
+            <div class="tab-text">
+              <div class="company-name">FreeTTS</div>
+              <div class="job-title">Unlimited Text to Speech Conversion</div>
+            </div>
+          </li>
+          <li onclick="showExperience(3)">
+            <div class="tab-text">
+              <div class="company-name">MyWebsite</div>
+              <div class="job-title">Online Portfolio</div>
+            </div>
+          </li>
+          <!-- For Future Use-->
+          <!--<li onclick="showExperience(4)">
+            <div class="tab-text">
+              <div class="company-name">NewTrack</div>
+              <div class="job-title">Music Recommendation System</div>
+            </div>
+          </li>-->
+        </ul>
+
+        <div class="experience-content">
+          <div class="experience-item active">
+            <h3 class="experience-role">Bit</h3>
+            <p class="experience-company">Miniature AI Assistant (in progress)</p>
+            <p class="experience-dates">April 2025 – Present</p>
+            <img src="assets/Bit.jpg" alt="Bit Preview">
+            <p class="github-link">
+                <a href="https://github.com/jacob-c-oram/Bit" target="_blank">Click here to see the GitHub repository</a>
+              </p>
+            <ul class="experience-bullets">
+              <li>Miniature desk robot that serves as an AI assistant with voice recognition and a camera.</li>
+              <li>Using an ESP32, programmed with C++ and connected to the OpenAI API for AI integration.</li>
+              <li>Camera used to detect motion and hand gestures for specific tasks.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <h3 class="experience-role">PlanIt</h3>
+            <p class="experience-company">AI Schedule + Task Optimizer</p>
+            <p class="experience-dates">April 2025 - Present</p>
+            <img src="assets/PlanIt.png" alt="PlanIt Preview">
+            <p class="github-link">
+                <a href="https://github.com/jacob-c-oram/PlanIt" target="_blank">Click here to see the GitHub repository</a>
+              </p>
+            <ul class="experience-bullets">
+              <li>Web app that utilizes AI and Machine Learning to optimize the perfect daily schedule.</li>
+              <li>Learns users' preferences, priorities, and current events to create a schedule custom tailored for the user.</li>
+              <li>Perfect for all needs - designed for personal, team based, and management use.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <h3 class="experience-role">FreeTTS</h3>
+            <p class="experience-company">Unlimited Text to Speech Conversion</p>
+            <p class="experience-dates"> April 2025</p>
+            <img src="assets/FreeTTS.jpg" alt="FreeTTS Preview">
+            <p class="github-link">
+                <a href="https://github.com/jacob-c-oram/FreeTTS" target="_blank">Click here to see the GitHub repository</a>
+              </p>
+              <p class="github-link">
+                <a href="https://jacob-c-oram.github.io/FreeTTS/" target="_blank">Click here to visit FreeTTS</a>
+              </p>
+            <ul class="experience-bullets">
+              <li>Online website for free text to speech conversion built using HTML and Web Speech API.</li>
+              <li>Able to convert an unlimited amount of words without the need for an account, unlike other sites.</li>
+              <li>Hosted on Github Pages, with multiple users every week.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <h3 class="experience-role">MyWebsite</h3>
+            <p class="experience-company">Online Portfolio</p>
+            <p class="experience-dates">April 2025</p>
+            <img src="assets/MyWebsite.jpg" alt="MyWebsite Preview">
+            <p class="github-link">
+                <a href="https://github.com/jacob-c-oram/MyWebsite" target="_blank">Click here to see the GitHub repository</a>
+              </p>
+              
+            <ul class="experience-bullets">
+              <li>Online portfolio for showcasing my projects, past experience, contact information, and resume.</li>
+              <li>Built using HTML, CSS for styling, JavaScript for animations.</li>
+              <li>Hosted on Github Pages with a custom, personalized domain name.</li>
+            </ul>
+          </div>
+
+
+
+          <!--For Future Use-->
+          <!--<div class="experience-item">
+            <h3 class="experience-role">NewTrack</h3>
+            <p class="experience-company">Music Recommendation System</p>
+            <p class="experience-dates">December 2024</p>
+            <img src="assets/trackfinder.png" alt="TrackFinder Preview">
+            <ul class="experience-bullets">
+              <li>Used a dataset of 114k+ Spotify songs to recommend music based on survey data.</li>
+              <li>Compared performance of Red-Black Tree and B-Tree for metadata search.</li>
+              <li>Built with C++, Python, and visualized results using matplotlib.</li>
+            </ul>
+          </div>-->
+
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Jacob Oram 2025 — All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
