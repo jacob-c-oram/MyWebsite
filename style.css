@@ -477,6 +477,11 @@ main {
 .experience-list li:nth-child(3) {
   animation-delay: 0.6s;
 }
+.experience-list li:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+/*repeat here if add more sections*/
 
 .experience-list li:hover,
 .experience-list li.active {
