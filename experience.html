@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Experience | Jacob Oram</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body>
+  <div id="wrapper">
+    <header class="navbar">
+      <h1 class="logo">Jacob Oram</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="experience-section">
+      <h2 class="section-fade-in">Experience</h2>
+      
+
+      <div class="experience-container section-fade-in" style="animation-delay: 0s;">
+        <ul class="experience-list">
+            <li class="active" onclick="showExperience(0)">
+                <img src="assets/ufciti.png" alt="UF–Citi" class="company-icon" />
+                <div class="tab-text">
+                  <div class="company-name">UF–Citi Power Consumption Initiative</div>
+                  <div class="job-title">Data Analytics Researcher</div>
+                </div>
+              </li>
+              
+              <li onclick="showExperience(1)">
+                <img src="assets/shpe.jpg" alt="SHPE" class="company-icon" />
+                <div class="tab-text">
+                  <div class="company-name">UF Society of Hispanic Professional Engineers</div>
+                  <div class="job-title">Last Year Leaderhip Program Director</div>
+                </div>
+              </li>
+              
+              <li onclick="showExperience(2)">
+                <img src="assets/publix.png" alt="Publix" class="company-icon" />
+                <div class="tab-text">
+                  <div class="company-name">Publix Super Markets</div>
+                  <div class="job-title">Bakery Clerk + Customer Service Associate</div>
+                </div>
+              </li>
+              
+        </ul>
+
+        <div class="experience-content">
+            <div class="experience-item active">
+                <h3 class="experience-role">Data Analytics Researcher</h3>
+                <p class="experience-company">UF-Citi Power Consumption Initiative</p>
+
+                <p class="experience-dates">February 2025 – Present</p>
+                <ul class="experience-bullets">
+                  <li>Analyzed a real world data center with over 35,000 virtual machines running across 6,000 servers by using Splunk dashboards and creating insightful visualizations.</li>
+                  <li>Identified over 500 servers with underutilized CPU and memory usage for reconsolidation and decommissioning.</li>
+                  <li>Improved and helped build a custom data center simulation tool to find power consumption with over 80% accuracy to actual data centers.</li>
+                </ul>
+              </div>
+              
+              <div class="experience-item">
+                <h3 class="experience-role">Last Year Leadership Program Director</h3>
+                <p class="experience-company">UF Society of Hispanic Professional Engineers</p>
+
+                <p class="experience-dates">January 2025 – Present</p>
+                <ul class="experience-bullets">
+                  <li>Established corporate partnerships to secure sponsorships and provide job opportunities through events aimed at
+                    helping students in their last year of college find careers in the tech industry.</li>
+                  <li>Organized and led over 5 networking and workshop events in collaboration with multiple companies, offering career
+                    readiness skills and industry connections for graduating students.</li>
+                  <li>Implemented new initiatives such as professional shadowing and alumni consulting, leading to record-breaking attendance of over 25 participants and the addition of over 10 new members to the program.</li>
+                </ul>
+              </div>
+              
+              <div class="experience-item">
+                <h3 class="experience-role">Bakery Clerk + Customer Service Associate</h3>
+                <p class="experience-company">Publix Super Markets</p>
+
+                <p class="experience-dates">February 2019 – Present</p>
+                <ul class="experience-bullets">
+                  <li>Trained over 10 new employees on department operations, safety protocols, and ensuring premier customer service standards are met.</li>
+                  <li>Assumed various additional responsibilities outside of my role to aid the store with inventory management, unloading trucks in other departments, and cross-training in the customer service department to assist them when needed</li>
+                  <li>Received two job class promotions and multiple exemplary worker awards for working overtime, consistently exceeding performance expectations, and taking initiative during critical operational periods.</li>
+                </ul>
+              </div>
+              
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Jacob Oram 2025 — All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
