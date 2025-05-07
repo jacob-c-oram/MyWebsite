@@ -450,6 +450,7 @@ main {
 }
 
 .experience-list li {
+  /*Mobile Adddition*/ word-wrap: break-word;
   display: flex;
   align-items: center;
   gap: 1rem;
