@@ -6,7 +6,7 @@ const texts = [
 ];
 
 const FADE_MS = 1500;
-const DISPLAY_MS = 2000;
+const DISPLAY_MS = 1900;
 const INTERVAL_MS = FADE_MS + DISPLAY_MS;
 
 let idx = 0;
@@ -42,4 +42,23 @@ function swapText() {
   );
 }
 
-setInterval(swapText, INTERVAL_MS);
+setTimeout(() => {
+  swapText(); 
+  setInterval(swapText, INTERVAL_MS);
+}, DISPLAY_MS);
+
+
+//setInterval(swapText, INTERVAL_MS);
+
+
+
+//Experience Section
+function showExperience(index) {
+  const tabs = document.querySelectorAll('.experience-list li');
+  const items = document.querySelectorAll('.experience-item');
+
+  tabs.forEach((tab, i) => {
+    tab.classList.toggle('active', i === index);
+    items[i].classList.toggle('active', i === index);
+  });
+}
