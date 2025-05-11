@@ -5,7 +5,7 @@ const texts = [
   "Interested in AI/ML."
 ];
 
-const FADE_MS = 1500;
+const FADE_MS    = 1500;
 const DISPLAY_MS = 1900;
 const INTERVAL_MS = FADE_MS + DISPLAY_MS;
 
@@ -13,52 +13,58 @@ let idx = 0;
 const t1 = document.getElementById("text1");
 const t2 = document.getElementById("text2");
 
-t2.classList.remove("hidden");
-t2.classList.add("fade-out");
+if (t1 && t2) {
+  t2.classList.remove("hidden");
+  t2.classList.add("fade-out");
 
-t1.textContent = texts[0];
-t1.classList.add("fade-out");
+  t1.textContent = texts[0];
+  t1.classList.add("fade-out");
 
-setTimeout(() => t1.classList.replace("fade-out", "fade-in"), 50);
+  function swapText() {
+    const fadingOut = idx % 2 === 0 ? t1 : t2;
+    const fadingIn  = idx % 2 === 0 ? t2 : t1;
 
-function swapText() {
-  const fadingOut = idx % 2 === 0 ? t1 : t2;
-  const fadingIn = idx % 2 === 0 ? t2 : t1;
+    fadingOut.classList.replace("fade-in", "fade-out");
 
-  fadingOut.classList.replace("fade-in", "fade-out");
+    fadingOut.addEventListener(
+      "transitionend",
+      function handler() {
+        fadingOut.removeEventListener("transitionend", handler);
 
-  fadingOut.addEventListener(
-    "transitionend",
-    function handler() {
-      fadingOut.removeEventListener("transitionend", handler);
+        idx = (idx + 1) % texts.length;
+        fadingIn.textContent = texts[idx];
 
-      idx = (idx + 1) % texts.length;
-      fadingIn.textContent = texts[idx];
+        void fadingIn.offsetWidth;
+        fadingIn.classList.replace("fade-out", "fade-in");
+      },
+      { once: true }
+    );
+  }
 
-      void fadingIn.offsetWidth;
-      fadingIn.classList.replace("fade-out", "fade-in");
-    },
-    { once: true }
-  );
+
+  setTimeout(() => t1.classList.replace("fade-out", "fade-in"), 50);
+  setTimeout(() => {
+    swapText();
+    setInterval(swapText, INTERVAL_MS);
+  }, DISPLAY_MS);
 }
 
-setTimeout(() => {
-  swapText(); 
-  setInterval(swapText, INTERVAL_MS);
-}, DISPLAY_MS);
-
-
-//setInterval(swapText, INTERVAL_MS);
-
-
-
-//Experience Section
 function showExperience(index) {
-  const tabs = document.querySelectorAll('.experience-list li');
-  const items = document.querySelectorAll('.experience-item');
+  const tabs  = document.querySelectorAll(".experience-list li");
+  const items = document.querySelectorAll(".experience-item");
 
   tabs.forEach((tab, i) => {
-    tab.classList.toggle('active', i === index);
-    items[i].classList.toggle('active', i === index);
+    tab.classList.toggle("active", i === index);
+    items[i].classList.toggle("active", i === index);
+  });
+}
+
+const burger   = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+if (burger && navLinks) {
+  burger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    burger.classList.toggle("open");
   });
 }
